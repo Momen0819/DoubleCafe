@@ -1,0 +1,239 @@
+@charset "utf-8";
+/*======================================
+ [ -Main Stylesheet-
+  Theme: Coming soon Wantrant
+  Version: 1.0
+  Last change: 10/08/2023 ]
+*/
+.body-bg .overlay {
+	opacity: .6
+}
+.body-bg {
+	position: fixed
+}
+.cs-logo-holder {
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 40px;
+	z-index: 100;
+}
+.cs-logo-holder:before {
+	content: '';
+	position: absolute;
+	left: -70px;
+	top: -20px;
+	bottom: -20px;
+	right: -70px;
+	background: #0A0B0A;
+	border-radius: 0 0 20px 20px;
+}
+.cs-logo-holder:after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	margin-top: 40px;
+	width: 1px;
+	height: 70px;
+	background: rgba(255,255,255,.2)
+}
+.cs-logo-holder img {
+	width: auto;
+	height: 100%;
+	position: relative;
+	z-index: 10;
+}
+.cs-reserv-btn-wrap {
+	position: fixed;
+	bottom: 0;
+	width: 280px;
+	height: 80px;
+	border-radius: 20px 20px 0 0;
+	z-index: 100;
+	background: #0A0B0A;
+	cursor: pointer;
+	left: 50%;
+	margin-left: -140px;
+	padding-top: 10px;
+}
+.hero-title-item_dec {
+	position: fixed;
+	left: 60px;
+	z-index: 100;
+	top: 50%;
+	height: 450px;
+	margin-top: -225px;
+}
+.hit-right {
+	left: auto;
+	right: 60px;
+}
+.cs-reserv-btn-wrap:before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	border-radius: 10px  ;
+	background: #111;
+	border: 1px dashed rgba(255,255,255,.1);
+	transition: all .3s ease-in-out;
+}
+.cs-reserv-btn-wrap:after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 100%;
+	margin-bottom: 20px;
+	width: 1px;
+	height: 70px;
+	background: rgba(255,255,255,.2)
+}
+.cs-reserv-btn-wrap:hover:before {
+	background: var(--main-color);
+}
+.cs-reserv-btn {
+	color:var(--main-color);
+	text-transform: uppercase;
+	font-weight: 500;
+	line-height: 60px;
+	position: relative;
+	z-index: 3;
+	transition: all .3s ease-in-out;
+}
+.cs-reserv-btn-wrap:hover .cs-reserv-btn {
+	color:#000;
+}
+.content-box {
+	position: relative;
+	z-index: 5;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.cs-title h3 {
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin-top: 50px;
+ 	color:var(--main-color);
+}
+.cs-title {
+	margin-bottom: 30px;
+}
+.cs-title h2 {
+    font-size: 4.2em;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+}
+.section-title-separator:before, .section-title-separator:after {
+    border-top: 1px dotted rgba(255,255,255,.7);
+}
+.cs-social  {
+	position: relative;
+	z-index: 20;
+	margin-top: 50px;
+	display: inline-table;
+}
+.cs-social:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -8px;
+    border: 1px dashed rgba(255,255,255,.2);
+    z-index: -2;
+    box-shadow: 0px 0px 0px 5px rgba(255,255,255,.09);
+	background: rgba(255,255,255,.09);
+    border-radius: 10px;
+}
+.cs-social li {
+    display: inline-block;
+    margin: 0 4px;
+}
+.cs-social li a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    border-radius: 4px;
+	background: #111;
+    transition: all .3s linear;
+    color: var(--main-color);	
+}
+.cs-social li a:hover {
+	border-radius: 50%;
+	background: #fff;
+}
+.countdown {
+	max-width:1024px;
+	margin:0 auto;
+	position:relative;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+.cs-countdown-item {
+	color:#fff;
+	position:relative;
+	z-index:2;
+}
+.cs-countdown-item:before {
+	content:'';
+	position:absolute;
+	top:50%;
+	right:-10px;
+	width:20px;
+	height:1px;
+	border-top:1px solid var(--main-color);
+}
+.cs-countdown-item.no-dec:before{
+	display:none;
+}
+.cs-countdown-item .rot2 {
+	font-size:7.4em;
+	font-weight:700;
+	line-height: inherit;
+ 	color:#fff;
+}
+.cs-countdown-item h5 {
+	padding-bottom:0;
+	color:#fff;
+  	color:var(--main-color);
+	font-size:1.6em;
+}
+/*------ responsive----------*/
+@media only screen and  (max-width: 1068px) {
+.border-bg {
+    bottom: 80px;
+	overflow-y: auto;
+    scrollbar-width: 0;
+} 
+.countdown {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.cs-title h2 {
+    font-size: 3.2em;
+}
+.cs-countdown-item .rot2 {
+    font-size: 5.4em;
+}
+.countdown .cs-countdown-item:nth-child(2):before , .cs-reserv-btn-wrap:after , .cs-logo-holder:after {
+    display: none
+}	
+}
+@media only screen and  (max-width: 748px) {
+.content-box {
+    top:0;
+    transform: translateY(0);
+	padding: 120px 0 100px;
+} 
+}

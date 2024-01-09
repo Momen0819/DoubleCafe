@@ -1,0 +1,729 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="rtl">
+<head>
+    <!--=============== basic  ===============-->
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>
+        مطعم ولاونج دبل
+    </title>
+    <!--=============== css  ===============-->
+    <link type="text/css" rel="stylesheet" href="css/plugins.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <!--=============== favicons ===============-->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&amp;display=swap" rel="stylesheet">
+    <style>
+        .logo-holder img {
+            width: 80%;
+            height: 100%;
+        }
+
+        .dishes-nav-container
+        {
+            display:none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .logo-holder img {
+                width: 100%;
+                height: 80%;
+            }
+
+            .column-image {
+                display: none !important;
+            }
+
+            .dishes-nav-container {
+                display: block;
+            }
+
+            .dishes-nav_title {
+                font-size: 20px;
+                font-weight: 800;
+            }
+            .dishes-nav a {
+                text-align: right;
+            }
+            .order-wrap h4 {
+                padding: 20px;
+            }
+        }
+
+        .menu-container-wrap .hero-menu-item-img {
+            right: 20px;
+            left:unset;
+        }
+
+        .hero-menu-item-title h6 {
+            text-align: right;
+        }
+
+        .menu-container-wrap .hero-menu-item-price, .menu-container-wrap .add_cart {
+            left: 20px;
+            right: unset;
+        }
+
+        .hero-menu-item-title {
+            padding-right: 35%;
+        }
+
+        p {
+            text-align: right;
+        }
+
+        .hero-menu-item-details {
+            padding-right: 35%;
+        }
+
+        .order-wrap h4 {
+            text-align: center;
+        }
+
+        
+    </style>
+    <style>
+        body {
+            font-family: 'Tajawal',Tahoma !important;
+        }
+
+        h2, h1, h3, h4, h5, h6, a, p, li, span {
+            font-family: 'Tajawal',Tahoma !important;
+            letter-spacing: 0px !important;
+        }
+    </style>
+</head>
+    <body>
+        <!--loader-->
+        <div class="main-loader">
+            <div class="loader-wrap">
+                <span class="loader"></span>
+            </div>
+        </div>
+        <!--loader end-->
+        <!--  main   -->
+        <div id="main">
+            <div class="row col-lg-12">
+                <a href="#" class="logo-holder" style="left:0px">
+                    <img src="images/LogoImage.png" alt="">
+                </a>
+            </div>
+            <!--  header  -->
+            <header class="header_half">
+                <div class="header-inner">
+                    <!-- share-wrapper-->  
+                    <div class="share-wrapper share-wrapper_half">
+                        <div class="share-inner">
+                            <div class="share-container"></div>
+                        </div>
+                    </div>				
+                </div>
+            </header>
+            <!--  header end  -->
+            <!--  header end  -->
+            <!--column-image-->
+            <div class="column-image">
+                <div class="border-bg">
+                    <div class="bg"  data-bg="images/bg/long/1.jpg"></div>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <!--column-image end-->			
+            <!--column-wrap-->
+            <div class="column-wrap single_colimn-wrap vis_cimg">
+                <!--section-->
+                <div class="content-section column-wrap-section menu-section_wrap white-bg" data-scrollax-parent="true" id="sec2">
+                    <div class="container small-container">
+                        <!--menu-container-->
+                        <div class="menu-container" id="menu-section1">
+                            <div class="section-title">
+                                <h2>
+                                    المقبلات البارده
+                                </h2>
+                                <div class="section-title-separator_wrap">
+                                    <div class="section-title-separator"><span></span></div>
+                                </div>
+                            </div>
+                            <div class="menu-container-wrap">
+                                <!--hero-menu_item-->
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            مقبلات مشكل
+                                        </h6>
+                                        <span class="hero-menu-item-price">28 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            حمص - متبل - بابا غنوج - تبوله
+                                            <br />
+                                            السعرات الحرارية : 760
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--hero-menu_item end-->
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            مقبلات مشكل
+                                        </h6>
+                                        <span class="hero-menu-item-price">28 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            حمص - متبل - بابا غنوج - تبوله
+                                            <br />
+                                            السعرات الحرارية : 760
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            مقبلات مشكل
+                                        </h6>
+                                        <span class="hero-menu-item-price">28 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            حمص - متبل - بابا غنوج - تبوله
+                                            <br />
+                                            السعرات الحرارية : 760
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            مقبلات مشكل
+                                        </h6>
+                                        <span class="hero-menu-item-price">28 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            حمص - متبل - بابا غنوج - تبوله
+                                            <br />
+                                            السعرات الحرارية : 760
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            مقبلات مشكل
+                                        </h6>
+                                        <span class="hero-menu-item-price">28 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            حمص - متبل - بابا غنوج - تبوله
+                                            <br />
+                                            السعرات الحرارية : 760
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            مقبلات مشكل
+                                        </h6>
+                                        <span class="hero-menu-item-price">28 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            حمص - متبل - بابا غنوج - تبوله
+                                            <br />
+                                            السعرات الحرارية : 760
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--menu-container end-->
+                        <!--menu-container-->
+                        <div class="menu-container" id="menu-section2">
+                            <div class="section-title">
+                                <h2>
+                                    فطور دبل
+                                </h2>
+                                <div class="section-title-separator_wrap">
+                                    <div class="section-title-separator"><span></span></div>
+                                </div>
+                            </div>
+                            <div class="menu-container-wrap">
+                                <!--hero-menu_item-->
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            ترويقة دبل
+                                        </h6>
+                                        <span class="hero-menu-item-price">32 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            حلوم مشوي - لبنة - زيتون - مربى - خضار مشكل
+                                            <br />
+                                            السعرات الحرارية : 900
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--hero-menu_item end-->
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            ترويقة دبل
+                                        </h6>
+                                        <span class="hero-menu-item-price">32 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            حلوم مشوي - لبنة - زيتون - مربى - خضار مشكل
+                                            <br />
+                                            السعرات الحرارية : 900
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            ترويقة دبل
+                                        </h6>
+                                        <span class="hero-menu-item-price">32 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            حلوم مشوي - لبنة - زيتون - مربى - خضار مشكل
+                                            <br />
+                                            السعرات الحرارية : 900
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            ترويقة دبل
+                                        </h6>
+                                        <span class="hero-menu-item-price">32 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            حلوم مشوي - لبنة - زيتون - مربى - خضار مشكل
+                                            <br />
+                                            السعرات الحرارية : 900
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--menu-container end-->
+                        <!--menu-container-->
+                        <div class="menu-container" id="menu-section3">
+                            <div class="section-title">
+                                <h2>
+                                    الشوربات
+                                </h2>
+                                <div class="section-title-separator_wrap">
+                                    <div class="section-title-separator"><span></span></div>
+                                </div>
+                            </div>
+                            <div class="menu-container-wrap">
+                                <!--hero-menu_item-->
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            شوربه عدس
+                                        </h6>
+                                        <span class="hero-menu-item-price">18 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            عدس احمر - بصل - جزر - بهرات خاصه
+                                            <br />
+                                            السعرات الحرارية : 497
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            شوربه عدس
+                                        </h6>
+                                        <span class="hero-menu-item-price">18 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            عدس احمر - بصل - جزر - بهرات خاصه
+                                            <br />
+                                            السعرات الحرارية : 497
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            شوربه عدس
+                                        </h6>
+                                        <span class="hero-menu-item-price">18 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            عدس احمر - بصل - جزر - بهرات خاصه
+                                            <br />
+                                            السعرات الحرارية : 497
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            شوربه عدس
+                                        </h6>
+                                        <span class="hero-menu-item-price">18 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            عدس احمر - بصل - جزر - بهرات خاصه
+                                            <br />
+                                            السعرات الحرارية : 497
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            شوربه عدس
+                                        </h6>
+                                        <span class="hero-menu-item-price">18 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            عدس احمر - بصل - جزر - بهرات خاصه
+                                            <br />
+                                            السعرات الحرارية : 497
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--menu-container end-->						
+                        <!--menu-container-->
+                        <div class="menu-container" id="menu-section4">
+                            <div class="section-title">
+                                <h2>
+                                    البيتزا الإيطالي
+                                </h2>
+                                <div class="section-title-separator_wrap">
+                                    <div class="section-title-separator"><span></span></div>
+                                </div>
+                            </div>
+                            <div class="menu-container-wrap">
+                                <!--hero-menu_item-->
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            بيتزا دجاج رنش
+                                        </h6>
+                                        <span class="hero-menu-item-price">50 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            عجينة ايطاليه مع شرائح دجاج - صوص الرنش الخاص - فلفل رومي - جبنه المزاريلا
+
+                                            <br />
+                                            السعرات الحرارية : 960
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            بيتزا دجاج رنش
+                                        </h6>
+                                        <span class="hero-menu-item-price">50 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            عجينة ايطاليه مع شرائح دجاج - صوص الرنش الخاص - فلفل رومي - جبنه المزاريلا
+
+                                            <br />
+                                            السعرات الحرارية : 960
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            بيتزا دجاج رنش
+                                        </h6>
+                                        <span class="hero-menu-item-price">50 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            عجينة ايطاليه مع شرائح دجاج - صوص الرنش الخاص - فلفل رومي - جبنه المزاريلا
+
+                                            <br />
+                                            السعرات الحرارية : 960
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            بيتزا دجاج رنش
+                                        </h6>
+                                        <span class="hero-menu-item-price">50 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            عجينة ايطاليه مع شرائح دجاج - صوص الرنش الخاص - فلفل رومي - جبنه المزاريلا
+
+                                            <br />
+                                            السعرات الحرارية : 960
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            بيتزا دجاج رنش
+                                        </h6>
+                                        <span class="hero-menu-item-price">50 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            عجينة ايطاليه مع شرائح دجاج - صوص الرنش الخاص - فلفل رومي - جبنه المزاريلا
+
+                                            <br />
+                                            السعرات الحرارية : 960
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            بيتزا دجاج رنش
+                                        </h6>
+                                        <span class="hero-menu-item-price">50 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            عجينة ايطاليه مع شرائح دجاج - صوص الرنش الخاص - فلفل رومي - جبنه المزاريلا
+
+                                            <br />
+                                            السعرات الحرارية : 960
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero-menu-item">
+                                    <a href="images/menu/1.jpg" class="hero-menu-item-img image-popup"><img src="images/menu/thumbnails/1.jpg" alt=""></a>
+                                    <div class="hero-menu-item-title  ">
+                                        <h6>
+                                            بيتزا دجاج رنش
+                                        </h6>
+                                        <span class="hero-menu-item-price">50 ريال</span>
+                                    </div>
+                                    <div class="hero-menu-item-details">
+                                        <p>
+                                            عجينة ايطاليه مع شرائح دجاج - صوص الرنش الخاص - فلفل رومي - جبنه المزاريلا
+
+                                            <br />
+                                            السعرات الحرارية : 960
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--menu-container end-->						
+                    </div>
+                    <div class="dishes-nav-container scroll-fixed-column-content">
+                        <div class="container small-container">
+                            <div class="dishes-nav-content">
+                                <div class="dishes-nav_title"> أقسام قائمة الطعام <i class="fa-thin fa-chevron-up"></i></div>
+                                <div class="dishes-nav">
+                                    <nav class="dishes-nav_init">
+                                        <ul>
+                                            <li>
+                                                <a class="scroll-link fbgs act-dish" href="#menu-section1">
+                                                    المقبلات البارده
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="scroll-link fbgs" href="#menu-section2">
+                                                    فطور دبل
+                                                </a>
+                                            </li>
+                                            <li><a class="scroll-link fbgs" href="#menu-section3"> الشوربات</a></li>
+                                            <li>
+                                                <a class="scroll-link fbgs" href="#menu-section4">
+                                                    البيتزا الإيطالي
+                                                </a>
+                                            </li>
+ 
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="parallax-element" style="left: 20px; bottom: -50px"  ><img src="images/bg/dec/1.png" alt=""></div>
+                    <div class="parallax-element" style="right: 10%; top:90px"><img src="images/bg/dec/2.png" alt=""></div>
+                    <div class="limit-box"></div>
+                </div>
+                <!--section end-->
+                <div class="order-wrap">
+                    <div class="container small-container" style="text-align:center">
+                        <h4>
+                            <i class="fa fa-copyright" aria-hidden="true"></i>
+                            حقوق النشر محفوظة لمطعم ولاونج دبل 2024
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <!--column-wrap end-->
+            <!--footer  -->
+            <div class="height-emulator fl-wrap"></div>
+            
+            <!--footer end-->
+            <!--reservation modal-->			
+            <div class="reserv_modal-container">
+                <div class="reserv_modal-inner">
+                    <div class="reserv_modal-inner-box fl-wrap">
+                        <div class="close-reservation-modal close-rf radius_btn "><i class="fa-light fa-xmark"></i></div>
+                        <div class="reserv_modal-wrapper">
+                            <div class="reservation-content">
+                                <div class="reserv-modal-title">
+                                    <h4>Don't forget to book a table</h4>
+                                    <h3>Table Reservations</h3>
+                                    <div class="section-title-separator_wrap fl-wrap">
+                                        <div class="section-title-separator"><span></span></div>
+                                    </div>
+                                </div>
+                                <div class="reserv-modal_bg"></div>
+                                <div id="reserv-message"></div>
+                                <form  class="custom-form" action="php/reservation.php" name="reservationform" id="reservationform">
+                                    <fieldset>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" name="name" id="name" placeholder="Your Name *" value="">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text"  name="email" id="email" placeholder="Email Address *" value="">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text"  name="phone" id="phone" placeholder="Phone *" value="">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="fl-wrap">
+                                                    <select name="numperson" id="persons" data-placeholder="Persons" class="chosen-select no-search-select">
+                                                        <option data-display="Persons">Any</option>
+                                                        <option value="1">1 Person</option>
+                                                        <option value="2">2 People</option>
+                                                        <option value="3">3 People</option>
+                                                        <option value="4">4 People</option>
+                                                        <option value="5">5 People</option>
+                                                        <option value="Banquet">Banquet</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="date-container">
+                                                    <input type="text" placeholder="Date" id="res_date"     name="resdate"   value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <select name="restime" id="resrv-time" data-placeholder="Time" class="chosen-select no-search-select">
+                                                    <option data-display="Time">Any</option>
+                                                    <option value="10:00am">10:00 am</option>
+                                                    <option value="11:00am">11:00 am</option>
+                                                    <option value="12:00pm">12:00 pm</option>
+                                                    <option value="1:00pm">1:00 pm</option>
+                                                    <option value="2:00pm">2:00 pm</option>
+                                                    <option value="3:00pm">3:00 pm</option>
+                                                    <option value="4:00pm">4:00 pm</option>
+                                                    <option value="5:00pm">5:00 pm</option>
+                                                    <option value="6:00pm">6:00 pm</option>
+                                                    <option value="7:00pm">7:00 pm</option>
+                                                    <option value="8:00pm">8:00 pm</option>
+                                                    <option value="9:00pm">9:00 pm</option>
+                                                    <option value="10:00pm">10:00 pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <textarea name="comments"  id="comments" cols="30" rows="3" placeholder="Your Message:"></textarea>
+                                        <button class="reservation_btn radius_btn" id="reservation-submit">Book  Table</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <!-- reservation-wrap end-->		
+                        </div>
+                        <div class="reserv_modal-bg-wrap">
+                            <div class="bg"  data-bg="images/bg/11.jpg" ></div>
+                            <div class="overlay"></div>
+                            <div class="reservation-modal_hours">
+                                <div class="reservation-modal_hours_container">
+                                    <div class="reservation-modal_hours_container-wrap fl-wrap">
+                                        <h5>Call For Reservations</h5>
+                                        <h4>Opening Hours</h4>
+                                        <div class="work-time fl-wrap">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h6>Sunday to Tuesday</h6>
+                                                    <div class="hours">
+                                                        09:00<br>
+                                                        22:00
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h6>Friday to Saturday</h6>
+                                                    <div class="hours">
+                                                        11:00<br>
+                                                        19:00
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="big-number fl-wrap"><a href="tel:+3111123456789">+3(111)123456789</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reserv_modal_overlay fs-wrapper close-rf"></div>
+            </div>
+            <!--reservation modal end-->
+        </div>
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->   
+        <script  src="js/jquery.min.js"></script>
+        <script  src="js/plugins.js"></script>
+        <script  src="js/scripts.js"></script>
+    </body>
+</html>
